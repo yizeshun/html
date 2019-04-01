@@ -1,0 +1,33 @@
+# 块级元素
+每个块级元素默认占一行高度，一行内添加一个块级元素后无法一般无法添加其他元素（float浮动后除外。
+两个块级元素连续编辑时，会在页面自动换行显示，块级元素一般可嵌套块级元素或行内元素。
+
+# 行内元素
+行内元素也就是display:inline的元素，最典型的是<a>、<span>标签。
+# 行内块元素
+行内块元素就是display:inline-block的元素，典型的有input
+
+#行内元素特点
+1.只能设置左右的margin和padding
+2.不能设置高宽，它的宽高取决于内容
+
+#行内块元素
+行内块元素和块级元素的属性基本一致，可以设高宽、边距
+不同在于它允许左右存在元素，而块级元素就算只有1px也不允许有元素和它共享一行
+
+<div style="width:800px; height:300px;">
+    <span>
+        <input type="text" style="height: 30px;width: 20%">
+    </span>
+    <span>
+        <input type="text" style="height: 30px;width: 20%">
+    </span>
+    <span>
+        <input type="text" style="height: 30px;width: 20%">
+    </span>
+    <span>
+        <input type="text" style="height: 30px;width: 20%">
+    </span>
+</div>
+
+其中input的宽度是使用的div的宽的的20%
